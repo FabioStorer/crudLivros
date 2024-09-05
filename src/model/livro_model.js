@@ -1,7 +1,7 @@
 let nextId = 1;
 
 const model = (body, id = nextId++) => {
-
+console.log(body)
     if (body.titulo != undefined &&
         body.titulo != '' &&
         body.autor != undefined &&

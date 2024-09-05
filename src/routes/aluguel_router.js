@@ -16,7 +16,7 @@ route.get('/:id', (req, res) => {
 });
 
 route.put('/:id', (req, res) => {
-    const code = aluguel_controller.update(req.params.id, body);
+    const code = aluguel_controller.update(req.params.id, req.body);
     res.status(code).json();
 });
 

@@ -6,11 +6,11 @@ let nextId = 1;
 const model = (body, id = nextId++) => {
 
     if (livro_controller.show(body.livro_id) &&
-        estudante_controller.show(body.esudante_id) &&
-        dataAluguel != undefined &&
-        dataAluguel != '' &&
-        dataDevolucao != undefined &&
-        dataDevolucao != '') {
+        estudante_controller.show(body.estudante_id) &&
+        body.dataAluguel != undefined &&
+        body.dataAluguel != '' &&
+        body.dataDevolucao != undefined &&
+        body.dataDevolucao != '') {
         return {
             id,
             livro_id: body.livro_id,
